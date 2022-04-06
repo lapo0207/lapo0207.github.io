@@ -8,6 +8,133 @@
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Final Project Test</h1>
+    <img src="images/logo.png" alt="logo">
+    <!-- Nav bar for easier navigation through the web page -->
+    <div class="navbar">
+        <nav>
+                <a class="active" href="#home">Home</a>
+                <a href="#about-us">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#team">Teams</a>
+                <a href="#contact">Contact</a>
+        </nav>
+            <input type="text" placeholder="Search">
+    </div>
+    <!-- Home is the main page on the website, first thing people will see when finding the website -->
+    <div class="home">
+        <img src="images/main-banner.jpg" alt="main banner">
+        <h1>Welcome to Three Star Media</h1>
+        <p id="home">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eligendi reiciendis repellat deleniti esse ipsa officia enim, ex libero, modi exercitationem alias illo eius numquam excepturi. Autem dolores sapiente officiis.</p>
+        <button type="button">Connect with us</button>
+    </div>
+    <div class="about">
+        <img src="images/about-us.jpg" alt="about us">
+        <h2>About Us</h2>
+        <p id="about-us">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae laudantium magnam reiciendis. Veritatis porro fugiat quis animi, provident magnam nobis enim totam aspernatur aliquid sit quasi odio nihil quae labore.</p>
+    </div>
+    <div class="services">
+        <h2>Our Services</h2>
+        <img src="images/digital.jpg" alt="our services">
+        <h3>Digital Transformation</h3>
+        <p id="services">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at tenetur numquam asperiores libero sint a voluptatibus atque incidunt voluptate. Consequuntur laborum reiciendis nesciunt, voluptatibus esse enim hic sequi earum.</p>
+        <!-- Each section has a button to access more information -->
+        <button type="button">Digital Plans</button>
+    </div>
+    <div class="marketing">
+        <img src="images/marketing.jpg" alt="marketing">
+        <h2>Marketing</h2> 
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum ipsum quia itaque soluta voluptatibus aperiam, dicta hic alias omnis excepturi veritatis dolorum sapiente fugit deleniti ducimus esse quasi rem eos?</p>   
+        <button type="button">Marketing Plans</button>
+    </div>
+    <div class="video">
+        <!-- Images help users understand the content more, also makes it more visually apealing -->
+        <img src="images/video.jpg" alt="videos">
+        <h2>Video Production</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non temporibus minus, vel repellendus nesciunt quos ipsam adipisci. Mollitia sint nobis quia cum officia excepturi ex quibusdam deserunt eius, quidem enim.</p>
+        <button type="button">Video Plans</button>
+    </div>
+    <div class="web">
+        <img src="images/web.jpg" alt="web plans">
+        <h2>Web Development</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est ex quas dolorem dolor nisi architecto. Eum voluptate quod minus facilis unde iste perspiciatis neque beatae, exercitationem eius atque, quibusdam vel.</p>
+        <button type="button">Web Plans</button>
+    </div>
+    <div class="print">
+        <img src="images/print.jpg" alt="print">
+        <h2>Print</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, recusandae. Distinctio quaerat deserunt alias hic architecto maiores est quod? Sit, labore explicabo! Voluptates aspernatur officiis odio deleniti quis, corrupti voluptatem.</p>
+        <button type="button">Print Plans</button>
+    </div>
+    <div class="vision">
+        <img src="images/vision.jpg" alt="vision">
+        <h2>Our Vision</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod sapiente ex omnis, cumque voluptate quisquam sint molestiae quam facilis autem modi in, sunt consequuntur error eum id aspernatur odio non?</p>
+        <button type="button">Learn More</button>
+    </div> 
+    <!-- This section has 3 different class's for more organization and make the styling process easier -->
+    <section class="team" id="team">
+        <div class="john">
+            <h2>Our Team</h2>
+            <img src="images/john.jpg" alt="our team">
+            <h3>John Doe</h3>
+            <h4>CEO and Co-owner</h4>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias velit quisquam, nisi veritatis architecto porro praesentium fugiat repellat aspernatur facere enim, itaque voluptatibus cumque quia sed ipsa repellendus cum minus!</p>
+        </div>
+        <div class="bob">
+            <h3>Bob Rite</h3>
+            <h4>CFO and Co-owner</h4>
+            <hr>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, esse perspiciatis omnis delectus a optio eius voluptatibus iure rerum molestiae quae voluptas ut numquam tempora modi? Omnis voluptatibus mollitia modi.</p>
+        </div>
+    </section>
+    <section id="contact">
+        <!-- contact section with fully functioning buttons -->
+        <h2>Contact Us</h2>
+        <h3>Send us a message</h3>
+            <form action="form.html" method="get">
+                <div class="inputs">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname">
+                    <br>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email">
+                    <br>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+    </section>
+    <div>
+        <h2>Hours of operation</h2>
+        <table>
+            <tr>
+                <td>Days</td>
+                <td>Hours</td>
+            </tr>
+            <tr>
+                <td>Monday-Friday</td>
+                <td>9 AM-6 PM</td>
+            </tr>
+            <tr>
+                <td>Saturday-Sunday</td>
+                <td>Closed</td>
+            </tr>
+        </table>
+    </div>
+    <div class="wrapper">
+        <!-- map with the location, this is also fully functional and can be edited -->
+        <div class="map">
+            <h2>Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1435386.9861529511!2d-77.52737040569296!3d45.359102178177665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1649087993301!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright Three Star Media, 2020</p>
+        <p>All images are taken from <u>Unsplash</u></p>
+    </footer>
 </body>
 </html>
