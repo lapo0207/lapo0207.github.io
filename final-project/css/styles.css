@@ -829,7 +829,6 @@ footer::before{
         grid-template-areas: 
         "s s m m"
         "v w p p";
-        grid-auto-rows: minmax(200px);
     }
     .wrapper_services{
         grid-area: s;
